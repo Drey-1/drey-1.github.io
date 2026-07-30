@@ -14,6 +14,7 @@
     --teal: #4ab8a0;
     --blue: #5b9cf6;
     --purple: #9b7ff4;
+    --green: #7ff485;
     --serif: 'DM Serif Display', Georgia, serif;
     --sans: 'DM Sans', system-ui, sans-serif;
   }
@@ -322,6 +323,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
+    padding-right: 12rem;
     margin-bottom: 1.5rem;
   }
  
@@ -337,6 +339,7 @@
   .tag-blue {  color: var(--blue); border: 0.5px solid rgba(91,156,246,0.2); }
   .tag-teal {  color: var(--teal); border: 0.5px solid rgba(74,184,160,0.2); }
   .tag-purple {  color: var(--purple); border: 0.5px solid rgba(155,127,244,0.2); }
+  .tag-green {  color: var(--green); border: 0.5px solid rgba(127, 244, 143, 0.2); }
  
   .project-links {
     display: flex;
