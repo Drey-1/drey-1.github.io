@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Andrey</title>
+    <title>Andrey Alves · Desenvolvedor Fullstack</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -18,10 +19,10 @@
         
     <section class="hero">
         <div class="hero-inner">
-            <div class="hero-eyebrow">Desenvolvedor Frontend</div>
+            <div class="hero-eyebrow">Desenvolvedor Web Fullstack</div>
             <h1 class="hero-name">Andrey<br><em>Alves</em></h1>
             <p class="hero-desc">
-            Desenvolvedor Frontend especializado na construção de interfaces modernas, responsivas e bem estruturadas. Trabalho com React, TypeScript e ferramentas do ecossistema atual, sempre apoiado por fundamentos sólidos de HTML, CSS e JavaScript.
+            Desenvolvedor Fullstack especializado na construção de interfaces modernas, responsivas e bem estruturadas. Além do foco no client-side, também construo APIs robustas e realizo integrações de ponta a ponta utilizando Node.js, Express, Prisma e PostgreSQL.
             </p>
             <div class="hero-ctas">
                 <a href="#projetos" class="btn-primary">Ver projetos</a>
@@ -33,14 +34,48 @@
     <section id="projetos">
         <h2 class="section-label">Projetos</h2>
         <div class="projects-grid">
+
+            <div class="project-card reveal">
+                <div class="screenshot-wrapper">
+                    <img class="project-screenshot" src="assets/BedDetail-Desktop.webp" alt="Ceres screenshot">
+                </div>
+                <div>
+                    <div class="project-num">01</div>
+                    <h2 class="project-title">Ceres</h2>
+                    <p class="project-subtitle">Gerenciador de Horta · <span class="project-category">Fullstack</span></p>
+                    <p class="project-desc">
+                    Aplicação fullstack que responde, todo dia, o que a horta precisa: a tela “Hoje” calcula rega, adubo e colheita pendentes a partir do último registro real, sem depender de cronograma fixo. Autenticação JWT com refresh token rotativo em cookie httpOnly, posse de dados verificada em cadeia (incluindo relações indiretas), histórico com scroll infinito via Intersection Observer e testes unitários e de integração contra banco isolado.
+                    </p>
+                    <div class="tags">
+                        <span class="tag tag-gray">Next.js</span>
+                        <span class="tag tag-blue">TypeScript</span>
+                        <span class="tag tag-gray">Express</span>
+                        <span class="tag tag-teal">Tailwind CSS</span>
+                        <span class="tag tag-purple">Prisma</span>
+                        <span class="tag tag-blue">PostgreSQL</span>
+                        <span class="tag tag-green">Vitest</span>
+                        <span class="tag tag-teal">TanStack Query</span>
+                        <span class="tag tag-amber">JWT</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://ceres-garden-manager.vercel.app/login" target="_blank" class="link-btn primary">Demo ao vivo ↗</a>
+                        <a href="https://github.com/Drey-1/ceres-garden-manager" target="_blank" rel="noopener" class="link-btn">GitHub</a>
+                    </div>
+                    <p class="project-notice">API em plano gratuito: o primeiro acesso pode levar cerca de 1 minuto</p>
+                </div>
+                <div>
+                    <span class="project-badge badge-live">Live</span>
+                </div>
+            </div>
+
             <div class="project-card reveal">
                 <div class="screenshot-wrapper">
                     <img class="project-screenshot" src="assets/index-sreenshot.png" alt="Climax screenshot">
                 </div>
                 <div>
-                    <div class="project-num">01</div>
+                    <div class="project-num">02</div>
                     <h2 class="project-title">Climax</h2>
-                    <p class="project-subtitle">Dashboard de Previsão do Tempo · Stack Moderna</p>
+                    <p class="project-subtitle">Dashboard de Previsão do Tempo · <span class="project-category">Frontend</span></p>
                     <p class="project-desc">
                     Dashboard de previsão do tempo desenvolvido para fornecer informações climáticas de forma rápida e intuitiva. Implementa consumo de APIs, gerenciamento eficiente de estado assíncrono e visualização de dados através de gráficos interativos, com suíte de testes unitários cobrindo hooks, contexts e componentes.
                     </p>
@@ -69,9 +104,9 @@
                     <img class="project-screenshot" src="assets/home-desktop.png" alt="Vitesse screenshot">
                 </div>
                 <div>
-                    <div class="project-num">02</div>
+                    <div class="project-num">03</div>
                     <h2 class="project-title">Vitesse</h2>
-                    <p class="project-subtitle">Site de Concessionária · Fundamentos Puros</p>
+                    <p class="project-subtitle">Site de Concessionária · <span class="project-category">Frontend</span></p>
                     <p class="project-desc">
                     Site multi-páginas (home, listagem, detalhe, ofertas, mapa, contato) para uma concessionária fictícia. HTML semântico, CSS metodologia BEM, layout mobile-first com Flexbox e Grid, e JavaScript puro para interações de DOM. Design inspirado em marcas automotivas reais como a Renault — alto contraste, espaço negativo e hierarquia visual.
                     </p>
@@ -87,6 +122,9 @@
                         <a href="https://drey-1.github.io/vitesse-dealership/" target="_blank" rel="noopener" class="link-btn primary">Demo ao vivo ↗</a>
                         <a href="https://github.com/Drey-1/vitesse-dealership" target="_blank" rel="noopener" class="link-btn">GitHub</a>
                     </div>
+                </div>
+                <div>
+                    <span class="project-badge badge-live">Live</span>
                 </div>
             </div>
         </div>
@@ -109,6 +147,7 @@
                 <div class="skill-group-label">Stack moderna</div>
                 <div class="skill-list">
                     <span class="skill-item">React</span>
+                    <span class="skill-item">Next.js</span>
                     <span class="skill-item">TypeScript</span>
                     <span class="skill-item">Tailwind CSS v4</span>
                     <span class="skill-item">TanStack Query</span>
@@ -120,13 +159,23 @@
                 <div class="skill-list">
                     <span class="skill-item">Node.js</span>
                     <span class="skill-item">Express</span>
+                    <span class="skill-item">Prisma</span>
+                    <span class="skill-item">PostgreSQL</span>
+                    <span class="skill-item">Autenticação JWT</span>
                     <span class="skill-item">REST APIs</span>
-                    <span class="skill-item">Fetch / TanStack Query</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-label">Testes</div>
+                <div class="skill-list">
+                    <span class="skill-item">Vitest</span>
+                    <span class="skill-item">Supertest</span>
                 </div>
             </div>
             <div class="skill-group">
                 <div class="skill-group-label">Ferramentas</div>
                 <div class="skill-list">
+                    <span class="skill-item">Docker</span>
                     <span class="skill-item">Git & GitHub</span>
                     <span class="skill-item">VS Code</span>
                 </div>
@@ -146,7 +195,7 @@
     
     <footer>
         <span>Andrey Alves · 2026</span>
-        <span>Desenvolvedor Frontend · Eng. de Software</span>
+        <span>Desenvolvedor Fullstack · Eng. de Software</span>
     </footer>
     <script src="index.js"></script>
 </body>
